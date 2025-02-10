@@ -6,13 +6,7 @@
         link.addEventListener('click', function(event) {
             event.preventDefault();  // 防止 WebView 內部加載
             const url = this.href;
-            
-            // 顯示提示框
-            const userConfirmed = confirm("Do you want to open this link in your browser?");
-            
-            if (userConfirmed) {
-                // 使用 window.open 開啟新頁面
-                window.open(url, '_system');
+            window.open(url, '_system');
             }
         });
     });
